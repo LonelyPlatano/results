@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>The results of your answer:</title>
+    </head>
+    <body>
+        
+        <h1> Your name is <span id="n">???</span></h1>
+        <p>Your email is: <span id="em"></span></p>
+        <p>Enroll in email list?</p>
+        <span id="bx1"></span><br>
+        <span id="bx2"></span>
+        <p>Suggestions or Comments: <span id="texta"></span></p>
+        <br>
+        <p>Contact preference: </p>
+        <span id="rad"></span>
+        <br><p>State you live in: <span id="dropdown"></span></p>
+        <script>
+            var url_string =  window.location.search;
+
+            var params = new URLSearchParams (url_string);
+
+            var header = document.getElementById("n");
+            n.innerHTML = params.get("name");
+
+            var url_string =  window.location.search;
+
+            var params = new URLSearchParams (url_string);
+
+            var header = document.getElementById("em");
+            em.innerHTML = params.get("email");
+
+            var url_string =  window.location.search;
+
+            var params = new URLSearchParams (url_string);
+
+            var header = document.getElementById("bx1");
+            bx1.innerHTML = params.get("box1");
+
+            var url_string =  window.location.search;
+
+            var params = new URLSearchParams (url_string);
+
+            var header = document.getElementById("bx2");
+            bx2.innerHTML = params.get("box2");
+
+            var url_string =  window.location.search;
+
+            var params = new URLSearchParams (url_string);
+
+            var header = document.getElementById("texta");
+            texta.innerHTML = params.get("textarea");
+            
+            var url_string =  window.location.search;
+
+            var params = new URLSearchParams (url_string);
+
+            var header = document.getElementById("rad");
+            rad.innerHTML = params.get("radiob");
+            
+            var url_string =  window.location.search;
+
+
+            var url_string =  window.location.search;
+
+            var params = new URLSearchParams (url_string);
+
+            var header = document.getElementById("dropdown");
+            dropdown.innerHTML = params.get("state");
+        </script>
+    </body>
+</html>
